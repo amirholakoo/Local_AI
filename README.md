@@ -6,11 +6,11 @@ Setting up local AI in different methods
 
 ### Install WSL and Ubuntu
 
-`wsl --install`
+```wsl --install```
 
 ### Connect to a WSL Instance in a new window
 
-`wsl -d Ubuntu`
+```wsl -d Ubuntu```
 
 ### INSTALL OLLAMA
 
@@ -18,13 +18,13 @@ https://ollama.com/download
 
 OR
 
-`
-curl
-`
+```
+curl -fsSL http://ollama.com/install.sh | sh
+```
 
 ### Add a model to Ollama
 
-`ollama pull llama2`
+```ollama pull llama2```
 
 ## INSTALL DOCKER
 
@@ -47,11 +47,11 @@ sudo apt-get update
 ```
 
 ### Install Docker
-`sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+```sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin```
 
 ## RUN OPEN WEBUI DOCKER CONTAINER
 
-`docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main`
+```sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main```
 
 ## STABLE DIFFUSION INSTALL
 
@@ -65,26 +65,26 @@ libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev git
 ```
 ### Install Pyenv
 
-`curl https://pyenv.run | bash`
+```curl https://pyenv.run | bash```
 
 ### Install Python 3.10
 
-`pyenv install 3.10`
+```pyenv install 3.10```
 
 ### Make it global
 
-`pyenv global 3.10`
+```pyenv global 3.10```
 
  
 
 ## Install Stable Diffusion
 
-`wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh`
+```wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh```
 
 ### Make it executable
 
-`chmod +x webui.sh`
+```chmod +x webui.sh```
 
 ## Run it
 
-`./webui.sh --listen --api`
+```./webui.sh --listen --api```
