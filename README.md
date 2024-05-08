@@ -137,6 +137,9 @@ chmod +x webui.sh
 
 ## Run it
 
+
+643Xi$21
+
 ```
 ./webui.sh --listen --api
 ```
