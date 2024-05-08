@@ -26,6 +26,10 @@ OR
 curl -fsSL http://ollama.com/install.sh | sh
 ```
 
+### Ollama Status
+
+http://127.0.0.1:11434
+
 ### Add a model to Ollama
 
 ```
@@ -74,6 +78,9 @@ chmod +x webui.sh
 ```
 ./webui.sh --listen --api
 ```
+## Visit
+
+http://localhost:8080
 
 
 
