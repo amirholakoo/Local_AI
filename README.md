@@ -128,3 +128,18 @@ pyenv global 3.10
 ```
 wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh
 ```
+
+### Make it executable
+
+```
+chmod +x webui.sh
+```
+
+## Run it
+
+```
+./webui.sh --listen --api
+```
+## Visit
+
+http://localhost:??????
