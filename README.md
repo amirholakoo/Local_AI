@@ -63,7 +63,30 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
-## STABLE DIFFUSION INSTALL
+### Make it executable
+
+```
+chmod +x webui.sh
+```
+
+## Run it
+
+```
+./webui.sh --listen --api
+```
+
+
+
+
+
+
+
+
+
+
+# TESTING:
+
+# STABLE DIFFUSION INSTALL (NOT WORKING)
 
 ### Prereqs
 
@@ -97,16 +120,4 @@ pyenv global 3.10
 
 ```
 wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh
-```
-
-### Make it executable
-
-```
-chmod +x webui.sh
-```
-
-## Run it
-
-```
-./webui.sh --listen --api
 ```
